@@ -1,0 +1,9 @@
+version: '2.3'
+services:
+    lab:
+        volumes:
+            - .:/home/jovyan/work
+        ports:
+            - "11888:8888"
+        build: 
+            context: .
